@@ -6,7 +6,7 @@
 
 function isRoot() {
 	if [ "$EUID" -ne 0 ]; then
-		return 1
+		echo tun >> /etc/modules
 	fi
 }
 
